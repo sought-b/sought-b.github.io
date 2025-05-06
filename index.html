@@ -4,51 +4,140 @@
 <head>
     <meta charset="UTF-8" />
     <title>Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <h1>Jonathan Tagney</h1>
-    <img src="me.JPG">
-    <a href="mailto:jonathantagney@gmail.com">Email</a>
-    <a href="https://www.linkedin.com/in/jonathantagney/">LinkedIn</a>
-    <p>I'm currently a sophomore in the Games, Interactive Media and Mobile Technology program at Boise State and an
-        aspiring video editor and web/game developer. The projects displayed below were some of my favorite and the ones
-        I learned the most from.</p>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Jonathan Tagney</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#artifacts">Artifacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#artifacts">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>Jonathan Tagney</h1>
+        <div class="row"> <a href="mailto:jonathantagney@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/jonathantagney/">LinkedIn</a>
+        </div>
 
-    <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid" src="./Images/me.JPG">
+            </div>
+            <div class="col-md-6">
+                <!-- <a href="mailto:jonathantagney@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/jonathantagney/">LinkedIn</a> -->
+                <h2>About Me</h2>
+                <p id="loudText">I'm currently a sophomore in the Games, Interactive Media and Mobile Technology program
+                    at Boise
+                    State and an
+                    aspiring video editor and web/game developer. The projects displayed below were some of my favorite
+                    and the
+                    ones
+                    I learned the most from.</p>
+            </div>
+        </div>
+    </div>
 
-    <h2>Artifacts</h2>
 
-    <h3>Interactive 360 Virtual Reality Video</h3>
-    <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</li>
-        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </li>
-        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-        <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.</li>
-    </ul>
-    <h3>Mobile Data Narrative</h3>
-    <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</li>
-        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </li>
-        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-        <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.</li>
-    </ul>
-    <h3>2D Individual Game</h3>
-    <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</li>
-        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </li>
-        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-        <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.</li>
-    </ul>
+
+    <div id="artifacts" class="container">
+
+        <h2>Artifacts</h2>
+        <hr id="betterhr">
+        <div class="row">
+
+            <div class="col-md-4">
+                <h3>Mobile Data Narrative</h3>
+                <p>The goal for this project was to individually make a website using React.js and D3.js to make a table
+                    as well as data visualizations on a topic of our choosing. The project required a mix of HTML, CSS,
+                    JavaScript, as well as making sure everything was responsive and mobile friendly.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Interactive 360 VR Video</h3>
+                <p>For this project, I was put into a group with 4 others and we were tasked with creating a virtual
+                    reality video that was 360 and interactive through Unity. I handled most of the video editing for
+                    the project, using cuts as well as green-screening to add more engaging content to the experience. I
+                    also helped with some of the Unity programming needed for functionality.</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>2D Individual Game</h3>
+                <p>This was the first Unity game I developed, as well as my first somewhat fleshed out game. I learned
+                    the general workflow of Unity and used programming in C# to create this project. I also used skills
+                    in Adobe Photoshop, Illustrator, and Animate to create the initial art and animation with Aseprite
+                    being the program I used to make the game assets.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="download-section">
+                        <a href="./Uploads/GIMM 260 Mobile Data Narrative.zip" download class="download-btn">Download
+                            Mobile Data Narrative</a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <video controls>
+                        <source src="./Uploads/VR Video.mov" type="video/mp4">
+                    </video>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="download-section">
+                        <a href="./Uploads/Portfolio Assignment GIMM 110_Tagney.docx" download
+                            class="download-btn">Download
+                            Rhetorical Analysis</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Contacts</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="mailto:jonathantagney@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/jonathantagney/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sought-b"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
 
 
 </body>
